@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void ENTER() {
+        Scanner sc = new Scanner(System.in);
+        int count = 0;
+        String str = "";
+        while (!str.equals("enter"))
+        {
+            count += 1;
+            System.out.println("enter a word");
+            str = sc.nextLine();
+        }
+        System.out.println(count);
+    }
+    public static void main(String[] args) {
+        ENTER();
+    }
+}
