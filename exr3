@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void ENTER(int code) {
+        Scanner sc = new Scanner(System.in);
+        int count = 0;
+        while (code > 9999 || code < 1000 && count < 2)
+        {
+            System.out.println("Error, please try again");
+            code = sc.nextInt();
+            count++;
+        }
+        if (code < 10000 && code > 999)
+        {
+            System.out.println("How much money");
+        }
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter a 4 digit number");
+        int code = sc.nextInt();
+        ENTER(code);
+    }
+}
